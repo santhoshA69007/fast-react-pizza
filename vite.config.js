@@ -4,4 +4,10 @@ import eslint from "vite-plugin-eslint"
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(),eslint()],
+
+    server: {
+      port: 5173, // or any other port you prefer
+      host: '0.0.0.0', // this binds the server to all available IP addresses
+    },
+  
 })
